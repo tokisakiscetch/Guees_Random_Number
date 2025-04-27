@@ -13,7 +13,8 @@ int guess_randomize()
     std::string yes_or_no;
     std::cout << "Choice diff -> easy, medium, hard -> ";
     std::cin >> difficult;
-    for (char& c : difficult) {
+    for (char& c : difficult)
+    {
         c = std::tolower(c);
     }
     if (difficult == "hard") { max = 10; }
